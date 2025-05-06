@@ -17,6 +17,7 @@ export default function CreatePostForm() {
   const authorError = useSignal("");
   const contentError = useSignal("");
   
+  // Validación básica
   const validateForm = () => {
     let isValid = true;
     

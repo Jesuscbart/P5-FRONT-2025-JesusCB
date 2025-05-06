@@ -1,5 +1,6 @@
 import { PageProps } from "$fresh/server.ts";
 
+// Layaout básico para nevegar por la app
 export default function Layout({ Component }: PageProps) {
   return (
         <div class="container">

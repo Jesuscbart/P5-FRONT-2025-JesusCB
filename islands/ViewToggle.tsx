@@ -6,6 +6,7 @@ type ViewToggleProps = {
   initialValue?: boolean;
 };
 
+// No funciona T_T
 export default function ViewToggle({ onToggle, initialValue = false }: ViewToggleProps) {
   const isGrid = useSignal(initialValue);
 
