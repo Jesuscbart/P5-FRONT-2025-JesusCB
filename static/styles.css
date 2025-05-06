@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 10px;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #999;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.list-view > a > div {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.grid-view a > div {
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.grid-view img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+form {
+  margin: 0 auto;
+  background-color: white;
+  padding: 15px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.post-detail {
+  background-color: white;
+  padding: 15px;
+}
+
+.post-detail img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.comments-section {
+  margin-top: 20px;
+}
+
+.comment {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
