@@ -11,6 +11,7 @@ import * as $post_create from "./routes/post/create.tsx";
 import * as $search from "./routes/search.tsx";
 import * as $CreatePostForm from "./islands/CreatePostForm.tsx";
 import * as $LikeButton from "./islands/LikeButton.tsx";
+import * as $SearchForm from "./islands/SearchForm.tsx";
 import * as $ViewToggle from "./islands/ViewToggle.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -27,6 +28,7 @@ const manifest = {
   islands: {
     "./islands/CreatePostForm.tsx": $CreatePostForm,
     "./islands/LikeButton.tsx": $LikeButton,
+    "./islands/SearchForm.tsx": $SearchForm,
     "./islands/ViewToggle.tsx": $ViewToggle,
   },
   baseUrl: import.meta.url,

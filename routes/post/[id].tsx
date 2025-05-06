@@ -9,7 +9,7 @@ type PostDetailProps = {
 };
 
 export const handler: Handlers<PostDetailProps> = {
-  async GET(req, ctx) {
+  async GET(_req, ctx) {
     const id = ctx.params.id;
     try {
       const response = await getPostById(id);
