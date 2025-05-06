@@ -1,10 +1,7 @@
-// Utilidades para interactuar con la API
+// utils para interactuar con la API
 
 const API_URL = "https://back-p5-y0e1.onrender.com/api";
 
-/**
- * Obtiene todos los posts con paginación opcional y búsqueda
- */
 export async function getPosts(page = 1, limit = 10, search = "") {
   const searchParams = new URLSearchParams();
   if (page) searchParams.append("page", page.toString());
@@ -23,9 +20,7 @@ export async function getPosts(page = 1, limit = 10, search = "") {
   return await response.json();
 }
 
-/**
- * Obtiene un post por su ID
- */
+// Obtiene por su ID
 export async function getPostById(id: string) {
   const response = await fetch(`${API_URL}/posts/${id}`);
   
@@ -36,9 +31,7 @@ export async function getPostById(id: string) {
   return await response.json();
 }
 
-/**
- * Crea un nuevo post
- */
+// Crea un nuevo post
 export async function createPost(postData: {
   title: string;
   content: string;
@@ -60,9 +53,7 @@ export async function createPost(postData: {
   return await response.json();
 }
 
-/**
- * Da like a un post
- */
+// Da like a un post
 export async function likePost(id: string) {
   const response = await fetch(`${API_URL}/posts/${id}/like`, {
     method: "POST",
@@ -75,9 +66,7 @@ export async function likePost(id: string) {
   return await response.json();
 }
 
-/**
- * Añade un comentario a un post
- */
+//añade un comentario aun post
 export async function addComment(postId: string, commentData: {
   author: string;
   content: string;

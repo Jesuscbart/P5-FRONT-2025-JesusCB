@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { likePost } from "../utils/api.ts";
+import { likePost } from "../api.ts";
 
 type LikeButtonProps = {
   postId: string;

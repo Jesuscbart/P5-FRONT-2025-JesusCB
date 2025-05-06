@@ -1,7 +1,7 @@
 import { useSignal } from "@preact/signals";
 import { useEffect } from "preact/hooks";
 import { Post } from "../types.ts";
-import { getPosts } from "../utils/api.ts";
+import { getPosts } from "../api.ts";
 import PostCard from "../components/PostCard.tsx";
 
 export default function SearchForm() {

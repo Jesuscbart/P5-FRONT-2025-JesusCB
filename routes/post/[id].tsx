@@ -1,6 +1,6 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { Post } from "../../types.ts";
-import { getPostById } from "../../utils/api.ts";
+import { getPostById } from "../../api.ts";
 import LikeButton from "../../islands/LikeButton.tsx";
 
 type PostDetailProps = {

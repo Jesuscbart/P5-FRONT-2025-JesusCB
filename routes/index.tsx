@@ -1,6 +1,6 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { useSignal } from "@preact/signals";
-import { getPosts } from "../utils/api.ts";
+import { getPosts } from "../api.ts";
 import PostCard from "../components/PostCard.tsx";
 import ViewToggle from "../islands/ViewToggle.tsx";
 

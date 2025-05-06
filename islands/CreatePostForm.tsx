@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { createPost } from "../utils/api.ts";
+import { createPost } from "../api.ts";
 
 export default function CreatePostForm() {
   const title = useSignal("");
