@@ -1,4 +1,5 @@
-// utils para interactuar con la API
+// Utils para interactuar con la API
+// Utilizo fetch en lugar de axios :)
 
 const API_URL = "https://back-p5-y0e1.onrender.com/api";
 

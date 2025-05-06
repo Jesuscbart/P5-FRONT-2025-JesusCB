@@ -18,7 +18,7 @@ export const handler: Handlers<HomeProps> = {
       }
       return ctx.render({ posts: response.data.posts });
     } catch (error) {
-      console.error("Error fetching posts:", error);
+      console.error("Error buscando posts:", error);
       return ctx.render({ 
         posts: [], 
         error: error instanceof Error ? error.message : "Error desconocido" 

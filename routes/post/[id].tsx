@@ -21,7 +21,7 @@ export const handler: Handlers<PostDetailProps> = {
       }
       return ctx.render({ post: response.data });
     } catch (error) {
-      console.error("Error fetching post detail:", error);
+      console.error("Error buscando post:", error);
       return ctx.render({ 
         post: {} as Post, 
         error: error instanceof Error ? error.message : "Error desconocido" 
