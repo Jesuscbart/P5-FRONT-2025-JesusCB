@@ -66,9 +66,6 @@ export default function PostDetail({ data }: PageProps<PostDetailProps>) {
           <img 
             src={post.cover} 
             alt={`Portada de ${post.title}`}
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = "https://via.placeholder.com/800x400?text=Sin+imagen";
-            }}
           />
         )}
         
